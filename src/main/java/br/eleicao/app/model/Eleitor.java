@@ -8,7 +8,7 @@ import javax.persistence.Id;
 
 @Entity //CRIA TABELA ABAIXO NO SQL
 public class Eleitor {
-	@Id
+	@Id //CRIA PRIMARY KEY NO SQL
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//ID É UM AUTO INCREMENTO
 	private Long Id;
 	private String Nome;

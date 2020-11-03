@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 @Entity //CRIA TABELA ABAIXO NO SQL
 public class Candidato {
 	
-	@Id
+	@Id //CRIA PRIMARY KEY NO SQL
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Id;
 	private String Numero;

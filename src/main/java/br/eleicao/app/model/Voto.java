@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Voto {
-	@Id
+	@Id //CRIA PRIMARY KEY NO SQL
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//ID É UM AUTO INCREMENTO
 	private Long Id;
 	
@@ -21,6 +21,4 @@ public class Voto {
 	@JoinColumn(name="EleitorId") //CRIA COLUNA PRA FK
 	private Eleitor Eleitor; //ASSOCIA TIPO DA CLASSE
 	
-	
-
 }
