@@ -21,4 +21,44 @@ public class Voto {
 	@JoinColumn(name="EleitorId") //CRIA COLUNA PRA FK
 	private Eleitor Eleitor; //ASSOCIA TIPO DA CLASSE
 	
+	@ManyToOne 
+	@JoinColumn(name="ZonaId")
+	private Zona Zona;
+	
+	
+
+	public Long getId() {
+		return Id;
+	}
+
+	public void setId(Long id) {
+		Id = id;
+	}
+
+	public Candidato getCandidato() {
+		return Candidato;
+	}
+
+	public void setCandidato(Candidato candidato) {
+		Candidato = candidato;
+	}
+
+	public Eleitor getEleitor() {
+		return Eleitor;
+	}
+
+	public void setEleitor(Eleitor eleitor) {
+		Eleitor = eleitor;
+	}
+
+	public Zona getZona() {
+		return Zona;
+	}
+
+	public void setZona(Zona zona) {
+		Zona = zona;
+	}
+	
+	
+	
 }
